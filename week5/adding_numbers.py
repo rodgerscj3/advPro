@@ -4,11 +4,10 @@ def add_them_all(filename):
     sum = 0
     ### Your code here
     f = open("a.txt", "r")
-    contents = a.readlines()
-    for line in content:
-        for j in line:
-            if j.isdigit() == True:
-                sum += int(j)
+    lines = f.readlines()
+    for line in lines:
+        conv_int = int(line)
+        sum = counter + conv_int
     ### End of your code
     return sum
 
