@@ -3,9 +3,9 @@ import sys
 def add_them_all(filename):
     sum = 0
     ### Your code here
-    with open("a.txt", "r") as afile, open("b.txt","r") as bfile, open("c.txt", "r") as cfile, open("d.txt", "r") as dfile, open("e.txt", "r") as efile:
+    with open("a.txt", "r") as afile:
         contents = afile.readlines()
-    for line in afile, bfile, cfile, dfile, efile:
+    for line in afile:
         sum += int(line)
     ### End of your code
     return sum
