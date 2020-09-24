@@ -3,12 +3,12 @@ import sys
 def add_them_all(filename):
     sum = 0
     ### Your code here
-    afile = open("a.txt", "r")
-    for line in afile:
+    with open("a.txt", "r") as afile, open("b.txt","r") as bfile, open("c.txt", "r") as cfile, open("d.txt", "r") as dfile, open("e.txt", "r") as efile:
+        contents = afile.readlines()
+    for line in afile, bfile, cfile, dfile, efile:
         sum += int(line)
-    afile.close    
     ### End of your code
-    print(sum)
+    return sum
 
 if __name__ == "__main__":
     fname = sys.argv[1]
