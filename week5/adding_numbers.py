@@ -3,7 +3,7 @@ import sys
 def add_them_all(filename):
     sum = 0
     ### Your code here
-    with open("a.txt", "r") as afile:
+    with open('a.txt', 'r') as afile:
         contents = afile.readlines()
     for line in afile:
         sum += int(line)
